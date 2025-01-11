@@ -21,4 +21,3 @@ class dataParser:
         for i in range(2, self.ws.max_row + 1):
             self.dataList.append(self.createRow(i))
 
-

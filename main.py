@@ -9,6 +9,6 @@ if __name__ == '__main__':
     dist = dataParser('Km.xlsx' , [datetime.datetime, float])
     price = dataParser('ceny.xlsx' , [datetime.datetime, float])
     tmpanl = analiser(price.dataList, dist.dataList)
-    testDate = datetime.datetime(2014, 7, 7)
+    testDate = datetime.datetime(2014, 12, 31)
     x = tmpanl.findClosestDate(tmpanl.prices_dates , testDate)
-    print(tmpanl.prices_dates[x])
+    print(tmpanl.getDayUsage(testDate))
